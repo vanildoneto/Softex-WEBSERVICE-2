@@ -25,7 +25,7 @@ ex:
 
                 <p>New File</p>
 
-4. GET - O método GET requisita uma representação do recurso especificado. Exemplo, quando vamos pesquisar o site pela url.
+4. GET - O método GET tem a finalidade de ler ou pegar informações. Exemplo, quando vamos pesquisar o site pela url.
  ex:
   GET /index.html HTTP/1.1
   Host: www.exemplo.com
