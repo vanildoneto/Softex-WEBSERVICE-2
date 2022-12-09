@@ -1,0 +1,55 @@
+Métodos HTTP:
+
+1 . DELETE - Exclui um recurso ou uma coleção de recursos. Por exemplo, você pode excluir o registro de um funcionário que não trabalha mais em uma organização.
+
+ex: 
+ DELETE /arquivo.html HTTP/1.1
+ 
+2. POST - Serve para enviar informações ao serviço. Por exemplo, quando você entra no site e precisa enviar suas informações para poder entrar.
+
+ex:
+  POST / HTTP/1.1
+  Host: foo.com
+  Content-Type: application/x-www-form-urlencoded
+  Content-Length: 13
+
+  say=Hi&to=Mom
+
+3. PUT - Substitui um recurso ou uma coleção de recursos. Se os dados não existirem, o método Put os publicará. Por exemplo, você pode atualizar o endereço de remessa de um cliente.
+ 
+ ex: 
+   SOLICITAÇÃO: PUT /new.html HTTP/1.1         RESPOSTA: HTTP/1.1 201 Created                                              
+                Host: example.com                        Content-Location: /new.html
+                Content-type: text/html
+                Content-length: 16
+
+                <p>New File</p>
+
+4. GET - O método GET requisita uma representação do recurso especificado. Exemplo, quando vamos pesquisar o site pela url.
+ ex:
+  GET /index.html HTTP/1.1
+  Host: www.exemplo.com
+  
+5. TRACE - Ecoa o pedido, de maneira que o cliente possa saber o que os servidores intermediários estão mudando em seu pedido.
+
+6. OPTIONS - Recupera os métodos HTTP que o servidor aceita.
+
+7. HEAD - Variação do GET em que o recurso não é retornado. É usado para obter metainformações por meio do cabeçalho da resposta, sem ter que recuperar todo o conteúdo.
+
+8. CONNECT - Serve para uso com um proxy que possa se tornar um túnel SSL e TLS (um túnel pode ser usado, por exemplo, para criar uma conexão segura).
+ 
+ ex: CONNECT server.exemplo.com:80 HTTP/1.1
+     Host: server.exemplo.com:80
+     Proxy-Authorization: basic aGVsbG86d29ybGQ=
+--------------------------------------------------------------------------------------
+
+O que é WSDL ? 
+
+O que é WSDL: 
+WSDL é um a descrição em formato XML de um Web Service que utilizará SOAP / RPC como protocolo.
+É o acrônimo de Web Services Description Language (Linguagem de Descrição de Serviços Web).
+
+Por meio de um WSDL você informa ao cliente como cada serviço em um end-point deve ser invocado: quais os parâmetros e tipo de dados de cada parâmetro é esperado, e qual o tipo de dado do retorno será enviado como resposta.
+Além de descrever cada serviço (que pode ser comparado analogamente à um método a ser executado no programa servidor), também descreve como podem ser encontrados.
+
+                
